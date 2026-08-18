@@ -1,0 +1,35 @@
+{
+  "name": "genpark-model-agnostic-agent-harness-fallback-manager-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Unified model-agnostic agent harness switch & provider fallback manager.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "model-agnostic",
+    "harness-router",
+    "provider-fallback",
+    "fault-tolerant-ai",
+    "ph-august-dev"
+  ],
+  "inputs": {
+    "primary_provider": {
+      "type": "string"
+    },
+    "failover_providers": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "active_provider_routed": {
+      "type": "string"
+    },
+    "failover_occurred": {
+      "type": "boolean"
+    },
+    "routing_latency_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
